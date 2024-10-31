@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Gray: hsl(0, 0%, 20%);
+  --Dark-Gray: hsl(0, 0%, 12%);
+  --Off-Black: hsl(0, 0%, 8%);
+}
+
+body {
+  background-color: var(--Off-Black);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 352px;
+  padding: 16px;
+  background-color: var(--Dark-Gray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--White);
+  border-radius: 12px;
+}
+
+.container img {
+  width: 75px;
+  border-radius: 50%;
+  margin: 24px;
+}
+
+.container h1 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.container h4 {
+  color: var(--Green);
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.container p {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+  gap: 15px;
+  margin: 20px;
+}
+
+.links a {
+  width: 100%;
+  font-weight: 500;
+  color: var(--White);
+  text-decoration: none;
+  background-color: var(--Gray);
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 12px;
+}
+
+.links a:active {
+  cursor: url("./assets/images/cursor.png"), auto;
+}
+
+.links a:hover {
+  background-color: var(--Green);
+  color: #000;
+  transition-duration: 0.5s;
+  cursor: url("./assets/images/cursor.png"), auto;
+}
